@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+    <title>Home Page | Ogah Gondrong Online Services</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .bg-black a:hover {
+        color: #fcd34d;
+      }
+      .banner img {
+        filter: brightness(0.7);
+      }
+      .services {
+        padding: 4rem 2rem;
+        text-align: center;
+      }
+      .services h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+      }
+      .services .card {
+        border: 1px solid #e2e8f0;
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        transition: transform 0.2s;
+      }
+      .services .card:hover {
+        transform: scale(1.05);
+        background-color: #fcd34d;
+      }
+      .about {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .bagian {
+        box-sizing: border-box;
+      }
+
+      .kiri {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .h-48 {
+        height: 12rem;
+      }
+      .testimoni .card:hover {
+        transform: scale(1.05);
+      }
+      .faq-contairner {
+        max-width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 6rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <nav class="bg-black">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="index.html"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img
+            src="ASSETs/Logo-OgahGondrong.png"
+            class="h-12"
+            alt="Ogah Gondrong Logo"
+          />
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a
+            href="#rsvp"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Booking Now
+          </a>
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:text-slate-50 dark:bg-black"
+          >
+            <li>
+              <a
+                href="index.html"
+                class="block py-2 px-3 text-slate-50"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a href="#services" class="block py-2 px-3 text-slate-50"
+                >Services</a
+              >
+            </li>
+            <li>
+              <a href="#About" class="block py-2 px-3 text-slate-50">About</a>
+            </li>
+            <li>
+              <a href="#Location" class="block py-2 px-3 text-slate-50"
+                >Location</a
+              >
+            </li>
+            <li>
+              <a href="#Gallery" class="block py-2 px-3 text-slate-50"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a href="#FAQ" class="block py-2 px-3 text-slate-50">FAQ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="banner">
+      <div id="controls-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/banner.png"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="ASSETs/WhatsApp Image 2017-11-16 at 17.15.28.jpeg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/gallery 7.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/2022-10-07.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/2018-06-11.jpg"
+              class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt="..."
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div id="rsvp"></div>
+    <div class="booking mt-24 mb-6">
+      <form
+        method="post"
+        autocomplete="off"
+        name="google-sheet"
+        class="max-w-md mx-auto"
+      >
+        <h2
+          class="text-center text-2xl font-semibold underline underline-offset-2 decoration-yellow-200 mb-8"
+        >
+          Booking Now
+        </h2>
+        <div class="relative z-0 w-full mb-5 group">
+          <input
+            type="email"
+            name="floating_email"
+            id="floating_email"
+            class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+            placeholder=" "
+            required
+          />
+          <label
+            for="floating_email"
+            class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+            >Email address</label
+          >
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="floating_first_name"
+              id="floating_first_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_first_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >First name</label
+            >
+          </div>
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="text"
+              name="floating_last_name"
+              id="floating_last_name"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_last_name"
+              class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Last name</label
+            >
+          </div>
+        </div>
+        <div class="grid md:grid-cols-2 md:gap-6">
+          <div class="relative z-0 w-full mb-5 group">
+            <input
+              type="tel"
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+              name="floating_phone"
+              id="floating_phone"
+              class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-black dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+              placeholder=" "
+              required
+            />
+            <label
+              for="floating_phone"
+              class="peer-focus:font-medium absolute text-xs text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+              >Phone number (123-1456-7890)</label
+            >
+          </div>
+
+          <div class="relative max-w-sm mb-6">
+            <div
+              class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"
+                />
+              </svg>
+            </div>
+            <input
+              id="datepicker-actions"
+              name="floating_date"
+              datepicker
+              datepicker-buttons
+              datepicker-autoselect-today
+              type="text"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Select date"
+            />
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        >
+          Submit
+        </button>
+      </form>
+      <script type="text/javascript">
+        const scriptURL =
+          "https://script.google.com/macros/s/AKfycbwfFiLyaiHiGk7eYmZkH3upOMLe9d2tFqUQfEv1KzolPuy0uMsHgnPVckw6kQvPSsSrgw/exec";
+        const form = document.forms["google-sheet"];
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then((response) => alert("You have successfully submitted."))
+            .catch((error) => console.error("Error!", error.message));
+        });
+      </script>
+    </div>
+    <div id="services"></div>
+    <div
+      class="services bg-white mt-24"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+    >
+      <a href="haircutshave.html">
+        <h2 class="underline underline-offset-8 decoration-yellow-200">
+          Our Services
+        </h2>
+        <div
+          class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6"
+        >
+          <div class="card flex flex-col items-center">
+            <div class="flex justify-center">
+              <img
+                class="h-24"
+                src="Barber icon/hairdressing-scissors.png"
+                alt="Hairdressing Scissors"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Haircut</h3>
+          </div>
+          <div class="card">
+            <div class="flex justify-center">
+              <img
+                class="h-24"
+                src="Barber icon/shaving-razor.png"
+                alt="Hairdressing Scissors"
+              />
+            </div>
+            <h3 class="text-xl font-semibold">Shave</h3>
+          </div>
+          <div class="card">
+            <div class="flex justify-center">
+              <img
+                class="h-24"
+                src="Barber icon/hair-color.png"
+                alt="Hairdressing Scissors"
+              />
+            </div>
+            <h3 class="text-xl font-semibold">Colouring</h3>
+          </div>
+          <div class="card flex flex-col items-center">
+            <div class="flex justify-center">
+              <img
+                class="h-24"
+                src="Barber icon/hair-gel.png"
+                alt="Hairdressing Scissors"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mt-4">Others Product</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div
+      class="flex flex-wrap justify-between p-6 bg-gray-100 border border-gray-300 rounded-lg"
+    >
+      <div id="Location"></div>
+      <div
+        class="w-full md:w-1/3 p-4 mt-24"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
+        <h2 class="text-2xl font-bold mb-4">Service Beyond Expectation</h2>
+        <p>
+          In the heart of the bustling city lies "Ogah Gondrong Barbershop," a
+          sanctuary for those seeking the timeless charm of rock 'n roll and
+          classic styles. Amidst the hum of conversations and the rhythmic snip
+          of scissors, stands the quintessential barber a maestro of his craft.
+        </p>
+      </div>
+      <div
+        class="w-full md:w-1/3 p-4 mt-24"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        <!-- Map of Ogah Gondrong -->
+        <div class="h-64 bg-gray-200 flex items-center justify-center">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1015555178774!2d106.99276217589917!3d-6.250347461200724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698c3282afd879%3A0x15a25c27fa7a7fdf!2sOgah%20Gondrong%20Barbershop!5e0!3m2!1sid!2sid!4v1720575973399!5m2!1sid!2sid"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <div
+        class="w-full md:w-1/3 p-4 mt-24"
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+      >
+        <!-- Information and Contact -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+          <h3 class="text-xl font-semibold mb-2">Contact Information</h3>
+          <p>
+            Jl. Letjen Sarbini, Marga Jaya, Kec. Bekasi Sel., Kota Bks, Jawa
+            Barat 17141
+          </p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@ogahgondrong.com</p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="testimoni bg-white py-12"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
+      <h2
+        class="text-center text-2xl font-semibold underline underline-offset-8 decoration-yellow-200 mb-8"
+      >
+        Testimonials
+      </h2>
+      <div
+        class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8"
+      >
+        <div class="card p-6 border border-gray-300 rounded-lg shadow-md">
+          <p class="italic">
+            "Ogah Gondrong Barbershop benar-benar luar biasa! Pelayanan yang
+            sangat memuaskan dan suasana yang nyaman membuat saya selalu kembali
+            ke sini."
+          </p>
+          <div class="flex items-center mt-4">
+            <img
+              class="h-12 w-12 rounded-full"
+              src="Barber icon/user-icon.png"
+              alt="Customer 1"
+            />
+            <div class="ml-4">
+              <h3 class="font-semibold">Elvis Prasley</h3>
+              <p class="text-sm text-gray-600">Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-6 border border-gray-300 rounded-lg shadow-md">
+          <p class="italic">
+            "Tempat yang sempurna untuk potong rambut dengan gaya klasik.
+            Barber-nya sangat profesional dan ramah."
+          </p>
+          <div class="flex items-center mt-4">
+            <img
+              class="h-12 w-12 rounded-full"
+              src="Barber icon/user-icon.png"
+              alt="Customer 2"
+            />
+            <div class="ml-4">
+              <h3 class="font-semibold">Liam Galagger</h3>
+              <p class="text-sm text-gray-600">Customer</p>
+            </div>
+          </div>
+        </div>
+        <div class="card p-6 border border-gray-300 rounded-lg shadow-md">
+          <p class="italic">
+            "Suasana barbershop yang nyaman dan musik rock 'n roll yang menemani
+            sangat cocok dengan selera saya. Highly recommended!"
+          </p>
+          <div class="flex items-center mt-4">
+            <img
+              class="h-12 w-12 rounded-full"
+              src="Barber icon/user-icon.png"
+              alt="Customer 3"
+            />
+            <div class="ml-4">
+              <h3 class="font-semibold">John Lennon</h3>
+              <p class="text-sm text-gray-600">Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="About"></div>
+    <div
+      class="about-us mt-24"
+      data-aos="fade-up"
+      data-aos-anchor-placement="top-center"
+    >
+      <h2
+        class="text-center text-2xl font-semibold underline underline-offset-4 decoration-yellow-200 mb-8"
+      >
+        About
+      </h2>
+      <div
+        class="card p-6 border border-gray-300 rounded-lg shadow-md mt-2 mx-7"
+      >
+        <p>
+          "Ogah Gondrong Barbershop" adalah tempat potong rambut yang berfokus
+          pada gaya klasik dan rock 'n roll. Di sini, kami menawarkan pengalaman
+          potong rambut yang unik, menggabungkan suasana musik yang asyik dengan
+          sentuhan gaya yang tak lekang oleh waktu. Dengan tema "ogah gondrong,"
+          kami menekankan pada potongan rambut pendek yang rapi dan stylish,
+          cocok untuk mereka yang ingin tampil segar dan percaya diri.
+        </p>
+      </div>
+    </div>
+    <div id="Gallery"></div>
+    <div
+      class="gallery mt-24 mb-6 mx-4"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+    >
+      <h2
+        class="text-center text-2xl font-semibold underline underline-offset-8 decoration-yellow-200 mb-8"
+      >
+        Gallery
+      </h2>
+
+      <div id="gallery" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+          <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/p1.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 2 -->
+          <div
+            class="hidden duration-700 ease-in-out"
+            data-carousel-item="active"
+          >
+            <img
+              src="ASSETs/p2.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/p3.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/p4.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/p5.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+          <!-- Item 6 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img
+              src="ASSETs/p6.jpg"
+              class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- Slider controls -->
+        <button
+          type="button"
+          class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-prev
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5 1 1 5l4 4"
+              />
+            </svg>
+            <span class="sr-only">Previous</span>
+          </span>
+        </button>
+        <button
+          type="button"
+          class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+          data-carousel-next
+        >
+          <span
+            class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+          >
+            <svg
+              class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 6 10"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="m1 9 4-4-4-4"
+              />
+            </svg>
+            <span class="sr-only">Next</span>
+          </span>
+        </button>
+      </div>
+    </div>
+    <div id="FAQ"></div>
+    <div class="faq mt-2 mb-6 ml-">
+      <h2
+        class="text-center text-2xl font-semibold underline underline-offset-8 decoration-yellow-200 mb-8"
+      >
+        FAQs
+      </h2>
+      <div class="faq-contairner md:w-32 lg:w-1/2 flex:justify-center">
+        <div id="accordion-example" data-accordion="collapse">
+          <h3 id="accordion-example-heading-1">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-lg focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-1"
+              aria-expanded="true"
+              aria-controls="accordion-example-body-1"
+            >
+              <span>Apa itu Ogah Gondrong Barbershop?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-1"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-1"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Ogah Gondrong Barbershop adalah tempat potong rambut dengan tema
+              rock 'n roll dan gaya klasik. Kami menyediakan layanan potong
+              rambut yang fokus pada potongan pendek yang rapi dan stylish.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-2">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-2"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-2"
+            >
+              <span
+                >Apa yang membuat Ogah Gondrong Barbershop berbeda dari
+                barbershop lainnya?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-2"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-2"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Ogah Gondrong Barbershop menawarkan pengalaman potong rambut yang
+              unik dengan suasana musik yang asyik dan tema "ogah gondrong."
+              Kami menekankan pada potongan rambut pendek dan klasik yang selalu
+              terlihat segar dan keren.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-3">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-3"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-3"
+            >
+              <span
+                >Layanan apa saja yang tersedia di Ogah Gondrong
+                Barbershop?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-3"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-3"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Kami menyediakan layanan potong rambut, styling, dan perawatan
+              rambut. Selain itu, kami juga memberikan konsultasi gaya rambut
+              untuk membantu Anda menemukan potongan yang paling cocok dengan
+              gaya Anda.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-4">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-4"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-4"
+            >
+              <span>Apakah perlu membuat janji terlebih dahulu?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-4"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-4"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Meskipun kami menerima walk-in, kami menyarankan untuk membuat
+              janji terlebih dahulu agar Anda dapat memilih waktu yang paling
+              nyaman dan menghindari waktu tunggu.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-5">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-5"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-5"
+            >
+              <span>Apakah ada layanan khusus untuk anak-anak?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-5"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-5"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Ya, kami memiliki layanan potong rambut khusus untuk anak-anak
+              dengan gaya yang sesuai dan suasana yang nyaman.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-6">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-6"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-6"
+            >
+              <span
+                >Bagaimana cara membuat janji di Ogah Gondrong Barbershop?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-6"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-6"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Anda dapat membuat janji melalui telepon, pesan teks, atau
+              langsung datang ke barbershop kami untuk membuat reservasi.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-7">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-7"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-7"
+            >
+              <span
+                >Apakah Ogah Gondrong Barbershop menyediakan produk perawatan
+                rambut?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-7"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-7"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Ya, kami menyediakan berbagai produk perawatan rambut seperti
+              pomade, shampoo, dan conditioner yang dapat Anda beli di
+              barbershop kami.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-8">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-8"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-8"
+            >
+              <span
+                >Apakah Ogah Gondrong Barbershop menerima pembayaran dengan
+                kartu?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-8"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-8"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Ya, kami menerima pembayaran dengan kartu kredit dan debit, serta
+              pembayaran tunai.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-9">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-9"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-9"
+            >
+              <span
+                >Apakah ada diskon khusus atau promosi di Ogah Gondrong
+                Barbershop?</span
+              >
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-9"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-9"
+          >
+            <div class="p-5 border border-b-0 border-gray-200">
+              Kami sering mengadakan promosi dan diskon khusus. Anda dapat
+              mengikuti media sosial kami atau bertanya langsung di barbershop
+              untuk informasi lebih lanjut.
+            </div>
+          </div>
+
+          <h3 id="accordion-example-heading-10">
+            <button
+              type="button"
+              class="flex items-center justify-between w-full p-5 font-medium text-left border border-gray-200 rounded-b-lg focus:ring-4 focus:ring-gray-200"
+              data-accordion-target="#accordion-example-body-10"
+              aria-expanded="false"
+              aria-controls="accordion-example-body-10"
+            >
+              <span>Di mana lokasi Ogah Gondrong Barbershop?</span>
+              <svg
+                data-accordion-icon
+                class="w-6 h-6 shrink-0"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </h3>
+          <div
+            id="accordion-example-body-10"
+            class="hidden"
+            aria-labelledby="accordion-example-heading-10"
+          >
+            <div class="p-5 border border-gray-200">
+              Lokasi kami berada di [masukkan alamat lengkap]. Anda bisa
+              menemukan kami dengan mudah dan menikmati pengalaman potong rambut
+              yang menyenangkan.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-black text-white py-8">
+      <div class="max-w-screen-xl mx-auto px-4">
+        <div class="flex flex-wrap justify-between">
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="font-semibold text-lg mb-4">Ogah Gondrong Barbershop</h3>
+            <p>
+              Jl. Letjen Sarbini, Marga Jaya, Kec. Bekasi Sel., Kota Bks, Jawa
+              Barat 17141
+            </p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@ogahgondrong.com</p>
+          </div>
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+            <ul>
+              <li><a href="index.html" class="hover:underline">Home</a></li>
+              <li><a href="#services" class="hover:underline">Services</a></li>
+              <li><a href="#About" class="hover:underline">About</a></li>
+              <li><a href="#Location" class="hover:underline">Location</a></li>
+              <li><a href="#FAQ" class="hover:underline">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/4 mb-6 md:mb-0">
+            <h3 class="font-semibold text-lg mb-4">Follow Us</h3>
+            <ul class="flex space-x-4">
+              <li>
+                <a
+                  href="https://www.instagram.com/ogahgondrong/"
+                  class="hover:underline"
+                  >Instagram</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://x.com/ogahgondrong?lang=en"
+                  class="hover:underline"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
